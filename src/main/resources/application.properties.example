@@ -1,0 +1,11 @@
+spring.application.name=dnm
+spring.datasource.url=jdbc:postgresql://localhost:5432/dnm
+spring.datasource.username=YOUR_DB_USERNAME
+spring.datasource.password=YOUR_DB_PASSWORD
+spring.datasource.driver-class-name=org.postgresql.Driver
+
+spring.jpa.database-platform=org.hibernate.dialect.PostgreSQLDialect
+spring.jpa.hibernate.ddl-auto=update
+
+spring.security.user.name=YOUR_ADMIN_USERNAME
+spring.security.user.password=YOUR_ADMIN_PASSWORD

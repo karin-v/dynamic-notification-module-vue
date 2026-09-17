@@ -1,0 +1,15 @@
+package ee.teh.dnm.repository;
+
+import ee.teh.dnm.model.Notification;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import java.util.List;
+import java.util.Optional;
+
+public interface NotificationRepository extends JpaRepository<Notification, Long> {
+  Optional<Notification> findByActiveTrue();
+
+  List<Notification> findAllByOrderById();
+}
+
+
